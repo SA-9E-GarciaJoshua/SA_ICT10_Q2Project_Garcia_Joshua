@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domus Stultorum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Domus Stultorum</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Domum</a></li>
+        <li><a href="gwa.html">Calculator Graduum</a></li>
+        <li><a href="club.html">Sodalitas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="joker">
+    <div class="fool-title">
+      <img src="sun.png" alt="Sunflower" class="sunflower">
+      <h1 class="fool-text">Les damos la bienvenida a Domus Stultorum</h1>
+      <img src="sun.png" alt="Sunflower" class="sunflower">
+    </div>
+  </section>
+
+<section class="about">
+  <h2>About Our School</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        Domus Stultorum aims to nourish the talents of entertainers.
+      </p>
+     
+      <div id="extra-text" style="display: none;">
+        <p>
+          Our school offers multiple clubs that help students develop unique skills, such as public speaking, acrobatics, and juggling. These are skills that many other schools overlook, limiting opportunities for students. We aim to bring out everyone’s potential and give them a chance to excel in areas others might miss.
+        </p>
+      </div>
+      <button id="read-more-btn">Read More</button>
+    </div>
+    <div class="about-image">
+      <img src="clown.jpeg" alt="Clown">
+    </div>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById('read-more-btn');
+  const extraText = document.getElementById('extra-text');
+
+  btn.addEventListener('click', () => {
+    if (extraText.style.display === 'none') {
+      extraText.style.display = 'block';
+      btn.textContent = 'Read Less';
+    } else {
+      extraText.style.display = 'none';
+      btn.textContent = 'Read More';
+    }
+  });
+</script>
+
+</body>
+</html>

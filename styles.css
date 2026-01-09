@@ -294,11 +294,11 @@ input::placeholder {
     font-weight: bold;
 }
 
-/* ---------- PAGE-SPECIFIC NAVBARS ---------- */
+/* Nav bars */
 
-/* HOME */
+/* Homw */
 .home .navbar {
-    background-color: #8600a1; /* purple */
+    background-color: #8600a1;
 }
 
 .home .logo,
@@ -306,9 +306,9 @@ input::placeholder {
     color: #ffffff;
 }
 
-/* GWA */
+/* Calculator */
 .gwa .navbar {
-    background-color: #70D1FE; /* blue */
+    background-color: #70D1FE; 
 }
 
 .gwa .logo,
@@ -316,9 +316,8 @@ input::placeholder {
     color: #000000;
 }
 
-/* CLUBS */
 .club .navbar {
-    background-color: #b81236; /* green */
+    background-color: #b81236; 
 }
 
 .club .logo,
@@ -326,13 +325,13 @@ input::placeholder {
     color: #e5ec2a;
 }
 
-/* underline color */
+
 .home .nav-links a::after {
     background-color: #FED90F;
 }
 
 .gwa .nav-links a::after {
-    background-color: #8600a1;
+    background-color: #ce1af2;
 }
 
 .club .nav-links a::after {
@@ -360,7 +359,7 @@ input::placeholder {
 }
 
 #show-club-btn {
-    background-color: #056e00; /* default green for club page */
+    background-color: #1a6e00;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -371,6 +370,70 @@ input::placeholder {
 }
 
 #show-club-btn:hover {
-    background-color: #e1e133; /* darker green on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* optional shadow */
+    background-color: #4d4d00; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+#club-info img {
+    display: block;
+    margin-top: 15px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px solid yellow;  
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7); 
+}
+
+
+#club-info {
+    background-color: #b81236;   
+    color: yellow;           
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: pre-wrap;    
+    font-family: monospace;   
+}
+
+.club {
+    background-color: #b81236;      
+    color: yellow;   
+}
+
+.club .club-container {
+    background-color: rgb(104, 41, 41);      
+    color: yellow;              
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.club label,
+.club select,
+.club button {
+    color: yellow;           
+}
+
+#club-info {
+    background-color: #b81236;      
+    color: yellow;              
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+#club-info img {
+    border: 2px solid yellow;  
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7); 
+}
+.club .club-container h1 {
+    color: rgb(197, 21, 21);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.club select {
+    background-color: black;
+    color: yellow;       
+    border: 2px solid yellow;
+}
+

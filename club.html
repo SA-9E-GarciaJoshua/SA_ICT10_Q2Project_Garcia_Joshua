@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        #show-club-btn {
+            background-color: #056e00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #show-club-btn:hover {
+            background-color: #034d00;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        #club-info img {
+            display: block;
+            margin-top: 15px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="club">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Domus Stultorum</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gwa.html">Grade Calculator</a></li>
+                <li><a href="club.html" class="active">Clubs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="club-container">
+        <h1>School Club Information</h1>
+
+        <label for="club-select">Select a club:</label>
+        <select id="club-select">
+            <option value="">-- Select a club --</option>
+            <option value="puppet">Puppet Club</option>
+            <option value="gymnastics">Gymnastics Club</option>
+            <option value="acrobatics">Acrobatics Club</option>
+            <option value="magic">Magic Club</option>
+            <option value="improv">Improv Club</option>
+            <option value="debate">Debate Club</option>
+        </select>
+
+        <button id="show-club-btn" py-click="show_club_info">Show Club Information</button>
+
+        <pre id="club-info"></pre>
+    </div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
