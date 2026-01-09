@@ -1,0 +1,376 @@
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #056e00;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(128, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border: 1px solid var(--maroon-medium);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(128, 0, 0, 0.25);
+}
+
+.btn-primary {
+    background-color: #70D1FE;
+    border-color: #70D1FE;
+    color: #fff; 
+}
+
+.btn-primary:hover {
+    background-color: #5ab0d9; 
+    border-color: #5ab0d9;
+    color: #fff;
+}
+
+.input-group-text {
+    background-color: var(--maroon-dark);
+    color: white;
+    border: 1px solid var(--maroon-dark);
+    min-width: 80px;
+}
+
+.grades-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.grade-input-group {
+    margin-bottom: 15px;
+}
+
+#student_info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#summary {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#output {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 215, 0, 0.2);
+    border-radius: 5px;
+}
+
+.club-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+select,
+button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    background-color: white;
+    color: #4a1c1c;
+}
+
+button {
+    background-color: #8600a1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #600000;
+}
+
+label {
+    font-weight: bold;
+}
+
+#club-info {
+    background-color: #fff0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* TOP HALF */
+.navbar,
+.joker {
+    background-color: #8600a1;
+    color: white;
+}
+
+
+/* BOTTOM HALF */
+.about {
+    background-color: #fff0f0;
+    padding: 60px 0;
+}
+
+
+.joker {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.joker h1 {
+    color: #056e00;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home .navbar {
+    background-color: #8600a1;
+}
+
+.home .logo {
+    color: #056e00;
+}
+
+.fool-title {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fool-text {
+    text-align: center;
+    margin: 0;
+}
+
+.sunflower {
+    width: 60px;
+}
+
+@media (max-width: 768px) {
+    .sunflower {
+        width: 45px;
+    }
+}
+
+input.form-control {
+    background-color: #6c663f;
+    border: 1px solid #ccc; 
+    color: #000; 
+}
+
+
+input.form-control::placeholder {
+    color: #000; 
+}
+
+
+.container {
+    background-color: #FED90F; 
+    padding: 30px;             
+    border-radius: 10px;        
+}
+
+body {
+    background-color: #70D1FE; 
+    margin: 0;                
+    font-family: Arial, sans-serif; 
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, span, label, div, input, button, pre {
+    color: #000;      
+    font-weight: bold;   
+}
+
+
+input::placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+/* ---------- PAGE-SPECIFIC NAVBARS ---------- */
+
+/* HOME */
+.home .navbar {
+    background-color: #8600a1; /* purple */
+}
+
+.home .logo,
+.home .nav-links a {
+    color: #ffffff;
+}
+
+/* GWA */
+.gwa .navbar {
+    background-color: #70D1FE; /* blue */
+}
+
+.gwa .logo,
+.gwa-pge .nav-links a {
+    color: #000000;
+}
+
+/* CLUBS */
+.club .navbar {
+    background-color: #b81236; /* green */
+}
+
+.club .logo,
+.club .nav-links a {
+    color: #e5ec2a;
+}
+
+/* underline color */
+.home .nav-links a::after {
+    background-color: #FED90F;
+}
+
+.gwa .nav-links a::after {
+    background-color: #8600a1;
+}
+
+.club .nav-links a::after {
+    background-color: #FED90F;
+}
+
+.results-box {
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+#gwa_image {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#read-more-btn:hover {
+    background-color: #600080;
+    color: #056e00; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#show-club-btn {
+    background-color: #056e00; /* default green for club page */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#show-club-btn:hover {
+    background-color: #e1e133; /* darker green on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* optional shadow */
+}
